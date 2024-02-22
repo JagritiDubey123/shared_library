@@ -1,12 +1,10 @@
-@Library('share_lib_jag') _
+@Library('shared_library') _
 pipeline {
     agent any
 
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
+        stage{
+            myShared()
         }
     }
 }
