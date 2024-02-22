@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     stages {
-        stage{
+        stage('Test the Scripting'){
             steps{
             myShared()
             }
