@@ -18,6 +18,7 @@ pipeline {
                     // Use the shared library to run npm install
                     //npmInstall()
                 }
+        }
         //    }
         //}
         stage('Test') {
