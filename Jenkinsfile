@@ -10,10 +10,10 @@ pipeline {
         }
         stage('Build') {
             steps {
-                     dir('var/lib/jenkins/workspace/') { // Adjust the path to your workspace
+                    // dir('var/lib/jenkins/workspace/') { // Adjust the path to your workspace
                     script {
                         npmInstall()
-                    }
+                  //  }
                 }
                     // Use the shared library to run npm install
                     //npmInstall()
