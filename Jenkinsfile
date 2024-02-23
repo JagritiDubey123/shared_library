@@ -10,12 +10,16 @@ pipeline {
         }
         stage('Build') {
             steps {
-                script {
-                    // Use the shared library to run npm install
-                    npmInstall()
+                     dir('var/lib/jenkins/') { // Adjust the path to your workspace
+                    script {
+                        npmInstall()
+                    }
                 }
-            }
-        }
+                    // Use the shared library to run npm install
+                    //npmInstall()
+                }
+        //    }
+        //}
         stage('Test') {
             steps {
                 script {
