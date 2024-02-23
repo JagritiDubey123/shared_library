@@ -1,0 +1,10 @@
+{
+  "name": "example-nodejs-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+    // Other custom scripts...
+  },
+  // Other package.json configurations...
+}
