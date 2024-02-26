@@ -6,5 +6,5 @@
     "test": "jest"
     // Other custom scripts...
   },
-  // Other package.json configurations...
+
 }
