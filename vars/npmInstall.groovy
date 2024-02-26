@@ -4,5 +4,8 @@ def call() {
     // List files in current directory
     sh 'ls -la' 
     // Install npm package
-    sh 'sudo apt-get update && sudo apt-get install npm'
+    def password = 'jagriti@123'
+sh "echo ${password} | sudo -S apt-get update"
+
+    sh 'sudo apt-get install npm'
 }
