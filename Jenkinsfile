@@ -16,8 +16,7 @@ pipeline {
                         npmInstall()
                   // }
                 }
-                    // Use the shared library to run npm install
-                    //npmInstall()
+                   
                 }
         }
         //    }
@@ -38,7 +37,6 @@ pipeline {
                    //  dir('src/npm') {
                     // Use the shared library to run a custom npm script
                     runScript('start')
-              //  }
             }
             }
         }
