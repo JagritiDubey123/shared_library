@@ -12,9 +12,9 @@ pipeline {
             steps {
                     // dir('var/lib/jenkins/workspace/') { // Adjust the path to your workspace
                     script {
-                         dir('src/npm') {
+                        // dir('src/npm') {
                         npmInstall()
-                   }
+                  // }
                 }
                     // Use the shared library to run npm install
                     //npmInstall()
@@ -25,20 +25,20 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                     dir('src/npm') {
+                   //  dir('src/npm') {
                     // Use the shared library to run npm test
                     npmTest()
-                     }
+                    // }
                 }
             }
         }
         stage('Custom Script') {
             steps {
                 script {
-                     dir('src/npm') {
+                   //  dir('src/npm') {
                     // Use the shared library to run a custom npm script
                     runScript('start')
-                }
+              //  }
             }
             }
         }
