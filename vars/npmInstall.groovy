@@ -18,6 +18,7 @@ def call() {
   
     def startTime = new Date()
     echo "Starting npm install at ${startTime}"
+    sh 'sudo su'
     sh 'sudo apt-get update && sudo apt-get install -y nodejs npm'
    // sh 'npm install'
     sh 'node -v && npm -v'
