@@ -1,6 +1,8 @@
 def call() {
-    // Execute npm install command
-     sh 'pwd' // Print current working directory
-     sh 'ls -la' 
-    sh "install npm"
+    // Print current working directory
+    sh 'pwd' 
+    // List files in current directory
+    sh 'ls -la' 
+    // Install npm package
+    sh 'sudo apt-get update && sudo apt-get install npm'
 }
